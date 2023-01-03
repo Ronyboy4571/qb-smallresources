@@ -389,7 +389,7 @@ RegisterNetEvent('consumables:client:UseParachute', function()
         GiveWeaponToPed(ped, `GADGET_PARACHUTE`, 1, false, false)
         local ParachuteData = {
             outfitData = {
-                ["bag"]   = { item = 7, texture = 0},  -- Adding Parachute Clothing
+                ["bag"]   = { item = 0, texture = 0},  -- Adding Parachute Clothing
             }
         }
         TriggerEvent('qb-clothing:client:loadOutfit', ParachuteData)
